@@ -1,12 +1,12 @@
 import "./Category.css";    
 
-const Category=()=>{
+const Category=({ id, cateoryName, bgcolor,image, path })=>{
 
     return (
          <>
             <main
-            // key={item._id}
-            style={{ backgroundColor: "blue" }}
+            key={id}
+            style={{ backgroundColor: bgcolor }}
             className='category-card card-shadow mr-1'
             >
 
@@ -14,17 +14,17 @@ const Category=()=>{
             {/* //   dispatch({ type: "ADD_CATEGORIES", payload: item.categoryName }) */}
             {/* // }> */}
             {/* <Link to='/products'> */}
-              <section className='category-image-container'>
-                {/* <img
-                  src={item.image}
+              <section className='category-image-container relative'>
+                <img
+                  src={image}
                   alt='Category'
-                  className='category-image'
-                /> */}
+                  className='category-image absolute'
+                />
               </section>
-              <h5 className='ml-1 category-text-color'>Shop</h5>
-              <h5 className='ml-1 pb-1 category-text-color'>
-                Card Box
-              </h5>
+              <h3 className='ml-1 category-text-color'>Play</h3>
+              <h3 className='ml-1 pb-1 category-text-color'>
+              {cateoryName}
+              </h3>
              {/* </Link> */}
              {/* {categoriesdata && console.log(categoriesdata)} */}
           </main>

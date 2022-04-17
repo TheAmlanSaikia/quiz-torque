@@ -1,11 +1,10 @@
-import { Category, Navigation } from "../../components";
+import { Category } from "../../components";
 import { quizCategory } from "../../data";
 import "./Home.css";
 
 const Home = () => {
   return (
     <div className='home-grid-container'>
-      <Navigation />
       <header className='header-banner'>
         <section className='banner-wrapper flex-row justify-center flex-wrap'>
           <h3 className='banner-title'>
@@ -17,10 +16,10 @@ const Home = () => {
       <main className='main main-container mt-1'>
         <h3 className='main-title'>Featured Categories</h3>
         <section className='home-cards-display mt-1'>
-          {quizCategory.map(({ id, cateoryName, bgcolor, image,path }) => (
+          {quizCategory.map(({ id, categoryName, bgcolor, image,path }) => (
             <Category
               id={id}
-              cateoryName={cateoryName}
+              categoryName={categoryName}
               bgcolor={bgcolor}
               image={image}
               path={path}

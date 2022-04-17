@@ -1,0 +1,16 @@
+.quiz-box {
+  width: 50vw;
+  background-color: var(--quiz-box-color);
+  height: max-content;
+  border-radius: 0.5rem;
+}
+
+.options-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: stretch;
+}
+
+.next-btn {
+  margin-left: 20vw;
+}

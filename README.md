@@ -45,8 +45,8 @@ Features include-
 - Users can view score after completion. 
 
 Features to implement
--Dark Mode
--P1 and P2 features
+- Dark Mode
+- P1 and P2 features
 
 Preview
 ![quiz home](https://user-images.githubusercontent.com/83667291/163734856-6bcaee42-9ad6-4d47-8ac4-92de24355973.jpg)
@@ -65,7 +65,7 @@ Preview
 - ReactJS
 - React Router v6
 - CSS
--Vite
+- Vite
 
 <br />
 <br />

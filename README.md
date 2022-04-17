@@ -28,7 +28,7 @@ torque.
     torque is a quiz app with various sports categories. Each categories have multiple questions.  
 </p>
 <br />
-Play Here - 
+Play Here - https://torque-quiz.netlify.app/
 
 <br />
 <br />

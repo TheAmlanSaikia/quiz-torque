@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useQuiz } from "../../context/Quizcontext";
 import "./Quiz.css";
 
@@ -47,6 +48,7 @@ const QuizPage = () => {
             <div className='question-box mx-2 mt-1'>
               <h3>Game Over!</h3>
             </div>
+            <div>
             <button
               className='btn btn-primary-outline mt-3 quiz-btn'
               onClick={() => {
@@ -55,6 +57,10 @@ const QuizPage = () => {
               }}>
               Retry
             </button>
+            <Link to='/score' className='btn btn-primary-outline mt-3 score-btn'>
+               See Score
+           </Link>
+            </div>
           </div>
         ) : (
           <button

@@ -14,3 +14,8 @@
 .next-btn {
   margin-left: 20vw;
 }
+
+.score-btn{
+    background-color: #efefef;
+    padding: 0.4rem 0.8rem;
+}

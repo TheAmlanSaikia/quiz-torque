@@ -4,7 +4,7 @@ export const initialstate = {
   quizCategory: null,
   questions: [],
   selectedanswer: null,
-  correctanswer: null,
+  correctanswer: "",
   score: 0,
 };
 

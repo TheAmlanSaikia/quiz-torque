@@ -22,7 +22,7 @@ const Navigation = () => {
           href='/Login/login.html'
           className='navlinks text-md link btn btn-primary-solid'>
           <i className='fa-solid fal-lg fa-user'></i>
-          <p className='text-lg'>Profile</p>
+          <p className='text-lg'>Login</p>
         </a>
       </ul>
     </nav>

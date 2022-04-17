@@ -13,7 +13,7 @@ const Navigation = () => {
         to={"/"}
         onClick={() => {
           quizDispatch({ type: "RESET_ALL", payload: "" });
-          setCurrentQuestion(0);
+          setCurrentQuestion(null);
         }}>
         <h3 className='logo-text'>torque.</h3>
       </Link>

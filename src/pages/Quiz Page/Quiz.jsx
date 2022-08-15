@@ -49,17 +49,19 @@ const QuizPage = () => {
               <h3>Game Over!</h3>
             </div>
             <div>
-            <button
-              className='btn btn-primary-outline mt-3 quiz-btn'
-              onClick={() => {
-                setCurrentQuestion(currentQuestion - currentQuestion);
-                quizDispatch({ type: "SET_SCORE", payload: -score });
-              }}>
-              Retry
-            </button>
-            <Link to='/score' className='btn btn-primary-outline mt-3 score-btn'>
-               See Score
-           </Link>
+              <button
+                className='btn btn-primary-outline mt-3 quiz-btn'
+                onClick={() => {
+                  setCurrentQuestion(currentQuestion - currentQuestion);
+                  quizDispatch({ type: "RESET_SCORE", payload: 0 });
+                }}>
+                Retry
+              </button>
+              <Link
+                to='/score'
+                className='btn btn-primary-outline mt-3 score-btn'>
+                See Score
+              </Link>
             </div>
           </div>
         ) : (

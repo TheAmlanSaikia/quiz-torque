@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { useQuiz } from "../../context/Quizcontext";
 import "./Navigation.css";
@@ -18,12 +17,17 @@ const Navigation = () => {
         <h3 className='logo-text'>torque.</h3>
       </Link>
       <ul className='navlinks-secondary flex-row ml-auto list-style-none'>
-        <a
-          href='/Login/login.html'
-          className='navlinks text-md link btn btn-primary-solid'>
+        <Link
+          to={"/"}
+          // href='/Login/login.html'
+          className='navlinks text-md link btn btn-primary-solid'
+          onClick={() => {
+            quizDispatch({ type: "RESET_ALL", payload: "" });
+            setCurrentQuestion(null);
+          }}>
           <i className='fa-solid fal-lg fa-user'></i>
-          <p className='text-lg'>Login</p>
-        </a>
+          <p className='text-lg'>Home</p>
+        </Link>
       </ul>
     </nav>
   );

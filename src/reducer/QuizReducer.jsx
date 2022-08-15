@@ -51,6 +51,8 @@ const QuizReducer = (quizstate, {
     case "RESET_SCORE": {
       return {
         ...quizstate,
+        selectedanswer: null,
+        correctanswer: null,
         score: 0,
       };
     }

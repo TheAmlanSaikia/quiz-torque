@@ -16,7 +16,7 @@ const Home = () => {
       <main className='main main-container mt-1'>
         <h3 className='main-title'>Featured Categories</h3>
         <section className='home-cards-display mt-1'>
-          {quizCategory.map(({ id, categoryName, bgcolor, image,path }) => (
+          {quizCategory.map(({ id, categoryName, bgcolor, image, path }) => (
             <Category
               id={id}
               categoryName={categoryName}

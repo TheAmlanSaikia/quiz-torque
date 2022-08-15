@@ -43,6 +43,13 @@ const QuizReducer = (quizstate, { type, payload, correct }) => {
       };
     }
 
+    case "RESET_SCORE": {
+      return {
+        ...quizstate,
+        score: 0,
+      };
+    }
+
     case "RESET_ALL": {
       return {
         quizCategory: null,

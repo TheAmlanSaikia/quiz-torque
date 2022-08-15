@@ -25,7 +25,7 @@ const ScorePage = () => {
             className='btn btn-primary-outline mt-3 quiz-btn'
             onClick={() => {
               setCurrentQuestion(currentQuestion - currentQuestion);
-              quizDispatch({ type: "RESET_ALL", payload: "" });
+              quizDispatch({ type:"RESET_ALL", payload: "" });
             }}>
             Play again
           </Link>

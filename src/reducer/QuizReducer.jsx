@@ -1,4 +1,6 @@
-import { QuizData } from "../data";
+import {
+  QuizData
+} from "../data";
 
 export const initialstate = {
   quizCategory: null,
@@ -8,7 +10,11 @@ export const initialstate = {
   score: 0,
 };
 
-const QuizReducer = (quizstate, { type, payload, correct }) => {
+const QuizReducer = (quizstate, {
+  type,
+  payload,
+  correct
+}) => {
   switch (type) {
     case "ADD_CATEGORIES": {
       return {
@@ -36,10 +42,9 @@ const QuizReducer = (quizstate, { type, payload, correct }) => {
     case "SET_SCORE": {
       return {
         ...quizstate,
-        score:
-          quizstate.selectedanswer === quizstate.correctanswer
-            ? quizstate["score"] + payload
-            : quizstate.score,
+        score: quizstate.selectedanswer && quizstate.selectedanswer === quizstate.correctanswer ?
+          quizstate["score"] + payload :
+          quizstate.score,
       };
     }
 
@@ -62,4 +67,6 @@ const QuizReducer = (quizstate, { type, payload, correct }) => {
   }
 };
 
-export { QuizReducer };
+export {
+  QuizReducer
+};
